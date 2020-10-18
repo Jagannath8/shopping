@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING SITE</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header {
+            padding-top: 1%;
+            width: 100%;
+            background-color:black;
+            height: 40%;
+            padding-bottom: 1%;
+        }
+
+        .headcol {
+            font-family: Helvetica, sans-serif;
+            color: rgb(252, 253, 253);
+            display: inline-block;
+            padding: 2%;
+            font-size: 30px;    
+        }
+
+        .filter{
+            margin-left: 5%;
+            display: inline-block;           
+            height: 1%;
+            width:30%;
+        }
+  
+         .filterbutton{         
+            width: 5%;
+            height: 15%;
+            margin-left: 5%;
+        }
+
+        .search{
+            width: 30%;
+            margin-left:5% ;
+            display: inline-block; 
+            padding-top: 5px;
+
+        }
+
+        .cart {
+            margin-left: 0%;
+           color: white;
+            display: inline-block;
+            width: 5%;
+            padding: 8px;
+        }
+
+
+        input {
+            height: 25px;
+            width: 80px;
+            margin-left: 10px;
+            padding-left: 2px;
+            margin-top: 0;
+        }
+
+        .productscolumn {    
+            background-color: rgb(47, 23, 56);    
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .productlayout {
+            display: inline-block;
+            margin-top: 20px;      
+            height: auto;
+            width: 90%;
+            margin-left: 4%;
+            padding: 1%;
+        }
+        p{  
+            margin-left: 10px;
+            width: 80%;
+            height: 20%;
+            font-size: small;
+            padding-top: 5px;
+            font-family: Geneva, Verdana, sans-serif;
+            color: black;
+
+        }
+
+        .productcardbg {
+            background-color: white;
+           
+            border: 1px solid black;
+            
+            display: inline-block;
+        
+            height: 40%;
+            width: 28%;
+            margin-left: 3.5%;
+            margin-bottom: 10px;
+            padding-bottom: 1%;
+        }
+
+        .image {
+            height: 350px;
+            overflow: hidden;
+        }
+       
+        .symbol   
+        {
+           margin-left: 10px;
+           margin-top: 5px;
+            display: inline-block;
+            height:100%;
+            width: 80px;
+        }
+
+        .buttonbg{
+         background-color: black;
+            color: white;
+            font-family: sans-serif;
+            padding: 2px;
+        }
+
+        .cartd{
+            width: 100%;   
+           background-color: rgb(247, 244, 117);
+            height: auto;
+            padding-bottom: 20px;
+        }
+      
+    </style>
+</head>
+
+<body >
+
+    <div class="header">
+        <div class="symbol"><img class="symbol" src="products/amazon.jpg"></div>
+      
+        
+        <h1 class="headcol">Amazon</h1>
+    
+    
+        <div class="search">
+            <input type="text" style="width: 100%;" placeholder="Search Products" id='serstr' onkeyup="search()">
+            
+        </div>
+        <div class="filter">
+            <h5 style="color: white; font-family: sans-serif; padding: 3px;">Filter by price</h5>
+            <input type="text"placeholder="Min price"  id="minp"  />
+            <input type="text"  placeholder="Max price" id ="maxp"  />
+            <img  class="filterbutton" src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-square/512/Button_15-512.png" onclick="filter()">  
+   </div>
+        <div class="cart" >
+            <h>Cart : </h>
+            <h id="numb">0</h>
+        </div>
+       
+    </div>
+    <div class="productscolumn">
+        <div class="productlayout" id="card">
+            <div class="productcardbg" >
+               
+            
+            
+        </div>
+    
+    </div>
+<hr>
+<div class="cartd">
+    <h1
+        style= "margin-left: 600px; margin-top: 0; color: black; padding-top: 20px">
+        <u>Cart Items</u></h1>
+    <div class="productlayout" id="cartcard">
+    </div>
+
+</div>
+              
+<script src="index.js"></script>
+</body>
+
+</html>
+
+
+
