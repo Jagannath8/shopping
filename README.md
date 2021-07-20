@@ -15,8 +15,6 @@ Now say goodbye to those tensions because [Shopping Site](https://jagannath8.git
 So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Shopping Site](https://jagannath8.github.io/shopping/) is waiting for you.
 <p align="center"><img src="https://media1.tenor.com/images/84870528cb9933ad568d5a042a0cd03f/tenor.gif" width = 40%></p>
 
-## A sneak peek into what we have here🙈 :
-
 ## Tech Stack
 
 <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
@@ -41,9 +39,9 @@ To start contributing, follow the below guidelines:
 
 **🌟.**  Star🌟 the repository to appreciate the work.
 
-**0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Apni-Dukaan/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
+**0.**  Take a look at the existing [issues](https://github.com/Jagannath8/shopping/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
-**1.**  Fork [this](https://github.com/QAZIMAAZARSHAD/Apni-Dukaan) repository.
+**1.**  Fork [this](https://github.com/Jagannath8/shopping) repository.
 
 **2.**  Clone your forked copy of the project.
 
@@ -139,6 +137,6 @@ git push -u origin <your_branch_name>
 <h5 align="center"><b>MIT License</b></a>  
   
 ## Contributors
-<a href="https://github.com/QAZIMAAZARSHAD/Apni-Dukaan/graphs/contributors">
+<a href="https://github.com/Jagannath8/shopping/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Apni-Dukaan" />
 </a>
