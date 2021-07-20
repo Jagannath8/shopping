@@ -9,10 +9,17 @@ Going to shopping with your friends always sounds like fun at first. You get to 
 But shopping can be a headache many times due to the crowded bazaars, not being able to find what we are looking for, cash, and heavy shopping bags.
 <p align="center"><img src="https://media1.tenor.com/images/c5ddf9fb5699cd1f4d9d7268adb11f99/tenor.gif" width = 40%></p>
 
+
 Now say goodbye to those tensions because [Shopping site](https://jagannath8.github.io/shopping/) is here to the rescue. Now you can go shopping online day and night.
 <p align="center"><img src="https://media.tenor.com/images/9ab245324a95fdb46ba5a06f8e20143e/tenor.gif" width = 35%></p>
 
 So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Shopping site](https://jagannath8.github.io/shopping/) is waiting for you.
+
+Now say goodbye to those tensions because [Shopping Site](https://jagannath8.github.io/shopping/) is here to the rescue. Now you can go shopping online day and night.
+<p align="center"><img src="https://media.tenor.com/images/9ab245324a95fdb46ba5a06f8e20143e/tenor.gif" width = 35%></p>
+
+So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Shopping Site](https://jagannath8.github.io/shopping/) is waiting for you.
+
 <p align="center"><img src="https://media1.tenor.com/images/84870528cb9933ad568d5a042a0cd03f/tenor.gif" width = 40%></p>
 
 ## Tech Stack
