@@ -114,9 +114,9 @@ git push -u origin <your_branch_name>
 ## Project Admin👨‍
 
 <p align="center">
-<a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
+<a href="https://github.com/Jagannath8">
 <img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif"></p>
-<h5 align="center"><b>Qazi Maaz Arshad</b></a>
+<h5 align="center"><b>Jagannath Pal</b></a>
 
 ## Open Source Programs we have been associated with
   
@@ -126,7 +126,7 @@ git push -u origin <your_branch_name>
 
 ## Code of Conduct
 <p align="center">
-<a href="https://github.com/QAZIMAAZARSHAD/Apni-Dukaan/blob/master/CODE_OF_CONDUCT.md">
+<a href="https://github.com/Jagannath8/shopping/blob/main/CODE_OF_CONDUCT.md">
 <img width=35% src="https://i.cdn.talentegg.ca/incubator/wp-content/uploads/2018/07/tenor-1.gif"></p>
 <h5 align="center"><b>Click to read</b></a>
   
