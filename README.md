@@ -132,9 +132,8 @@ git push -u origin <your_branch_name>
   
 ## License
 <p align="center">
-<a href="https://github.com/QAZIMAAZARSHAD/Apni-Dukaan/blob/master/LICENSE">
 <img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
-<h5 align="center"><b>MIT License</b></a>  
+
   
 ## Contributors
 <a href="https://github.com/Jagannath8/shopping/graphs/contributors">
