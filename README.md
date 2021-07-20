@@ -6,7 +6,7 @@ Shopping! Who doesn't love shopping? Everyone wants to get their hands on latest
 Going to shopping with your friends always sounds like fun at first. You get to spend some quality time, and bond over new trends. 
 <p align="center"><img src="https://www.upbeatsoles.com/wp-content/uploads/2014/07/1-going-shopping.gif" width = 40%>></p>
 
-But shopping can be a headache many times due to the crowded bazaars, not being able to find what we are looking for, cash, and heavy shopping bags.
+But shopping can be a  many times due to the crowded bazaars, not being able to find what we are looking for, cash, and heavy shopping bags.
 <p align="center"><img src="https://media1.tenor.com/images/c5ddf9fb5699cd1f4d9d7268adb11f99/tenor.gif" width = 40%></p>
 
 
@@ -14,11 +14,6 @@ Now say goodbye to those tensions because [Shopping site](https://jagannath8.git
 <p align="center"><img src="https://media.tenor.com/images/9ab245324a95fdb46ba5a06f8e20143e/tenor.gif" width = 35%></p>
 
 So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Shopping site](https://jagannath8.github.io/shopping/) is waiting for you.
-
-Now say goodbye to those tensions because [Shopping Site](https://jagannath8.github.io/shopping/) is here to the rescue. Now you can go shopping online day and night.
-<p align="center"><img src="https://media.tenor.com/images/9ab245324a95fdb46ba5a06f8e20143e/tenor.gif" width = 35%></p>
-
-So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Shopping Site](https://jagannath8.github.io/shopping/) is waiting for you.
 
 <p align="center"><img src="https://media1.tenor.com/images/84870528cb9933ad568d5a042a0cd03f/tenor.gif" width = 40%></p>
 
@@ -32,7 +27,7 @@ You can refer to the following articles on the basics of Git and Github and also
 
 - If you don't have git on your machine, [install](https://help.github.com/articles/set-up-git/) it.
 - [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/-a-repo)
 - [Cloning a Repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 - [How to create an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
@@ -48,7 +43,7 @@ To start contributing, follow the below guidelines:
 
 **0.**  Take a look at the existing [issues](https://github.com/Jagannath8/shopping/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
-**1.**  Fork [this](https://github.com/Jagannath8/shopping) repository.
+**1.**   [this](https://github.com/Jagannath8/shopping) repository.
 
 **2.**  Clone your forked copy of the project.
 
@@ -68,7 +63,7 @@ cd shopping
 git remote add upstream https://github.com/jagannath8/shopping.git 
 ```
 
-**5.** Check the remotes for this repository.
+**5.**  the remotes for this repository.
 
 ```
 git remote -v
