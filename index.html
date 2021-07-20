@@ -6,56 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOPPING SITE</title>
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body >
+<body>
 
     <div class="header">
         <div class="symbol"><img class="symbol" src="products/amazon.jpg"></div>
-      
-        
+
+
         <h1 class="headcol">Amazon</h1>
-    
-    
+
+
         <div class="search">
             <input type="text" style="width: 100%;" placeholder="Search Products" id='serstr' onkeyup="search()">
-            
+
         </div>
         <div class="filter">
             <h5 style="color: white; font-family: sans-serif; padding: 3px;">Filter by price</h5>
-            <input type="text"placeholder="Min price"  id="minp"  />
-            <input type="text"  placeholder="Max price" id ="maxp"  />
-            <img  class="filterbutton" src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-square/512/Button_15-512.png" onclick="filter()">  
-   </div>
-        <div class="cart" >
+            <input type="text" placeholder="Min price" id="minp" />
+            <input type="text" placeholder="Max price" id="maxp" />
+            <img class="filterbutton"
+                src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-square/512/Button_15-512.png"
+                onclick="filter()">
+        </div>
+        <div class="cart">
             <h>Cart : </h>
             <h id="numb">0</h>
         </div>
-       
+
     </div>
     <div class="productscolumn">
         <div class="productlayout" id="card">
-            <div class="productcardbg" >
-               
-            
-            
-        </div>
-    
-    </div>
-<hr>
-<div class="cartd">
-    <h1
-        style= "margin-left: 600px; margin-top: 0; color: black; padding-top: 20px">
-        <u>Cart Items</u></h1>
-    <div class="productlayout" id="cartcard">
-    </div>
+            <div class="productcardbg">
 
-</div>
-              
-<script src="index.js"></script>
+
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="cartd">
+            <h1 style="margin-left: 600px; margin-top: 0; color: black; padding-top: 20px">
+                <u>Cart Items</u>
+            </h1>
+            <div class="productlayout" id="cartcard">
+            </div>
+
+        </div>
+        <!--    FOOTER  -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="index.js"></script>
 </body>
 
 </html>
-
-
-
