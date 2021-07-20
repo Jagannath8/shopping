@@ -12,15 +12,10 @@ But shopping can be a headache many times due to the crowded bazaars, not being 
 Now say goodbye to those tensions because [Apni Dukaan](https://qazimaazarshad.github.io/Apni-Dukaan/) is here to the rescue. Now you can go shopping online day and night.
 <p align="center"><img src="https://media.tenor.com/images/9ab245324a95fdb46ba5a06f8e20143e/tenor.gif" width = 35%></p>
 
-Now everything you are looking for is just a click away at [Apni Dukaan](https://qazimaazarshad.github.io/Apni-Dukaan/) at very cheap prices than the market. Everything will be at your doorsteps without much wait.
-<p align="center"><img src="https://media.tenor.com/images/4f49a0b0e1f4dc01b809a9886bdcc372/tenor.gif" width = 40%></p>
-
 So! Take a chill pill. Now you are free from all those headaches of traditional shopping and [Apni Dukaan](https://qazimaazarshad.github.io/Apni-Dukaan/) is waiting for you.
 <p align="center"><img src="https://media1.tenor.com/images/84870528cb9933ad568d5a042a0cd03f/tenor.gif" width = 40%></p>
 
 ## A sneak peek into what we have here🙈 :
-
-
 
 ## Tech Stack
 
