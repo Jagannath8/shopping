@@ -48,7 +48,7 @@ To start contributing, follow the below guidelines:
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone --depth 1 https://github.com/<your_user_name>/Apni-Dukaan.git
+git clone --depth 1 https://github.com/<your_user_name>/shopping.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
