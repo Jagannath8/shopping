@@ -147,7 +147,7 @@ function displayproduct(products, type="main", place="card") {
       <p>price : ${ele.price} INR</p>
       <h5 style="font-family : Geneva, Verdana, sans-serif; padding-left : 10px ;padding-top : 10px">${ele.description}</h5>
       <p style="padding-top: 5px">
-      <button class="buttonbg" onclick="addToCart(${ele.id})">Add to Cart</button>
+      <button type="button" onclick="addToCart(${ele.id})" class="btn btn-dark">Add to Cart</button>
       </p>
       </div>
       </div>`;
@@ -167,7 +167,7 @@ function displayproduct(products, type="main", place="card") {
         <p>price : ${ele.price} INR</p>
         <h5 style="font-family : Geneva, Verdana, sans-serif; padding-left : 10px ;padding-top : 10px">${ele.description}</h5>
         <p style="padding-top: 5px">
-          <button class="buttonbg" onclick="deleteproduct(${ele.id})">Delete item</button>
+          <button type="button" onclick="deleteproduct(${ele.id})" class="btn btn-dark">Delete Item</button>
         </p>
       </div>
     </div>`;
