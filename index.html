@@ -2,77 +2,561 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOPPIE-SITE</title>
-    <link rel="stylesheet" href="css\styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- FAVICON -->
-<link rel="icon" href="./assets/logo.png">
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/logo.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
+  <!-- Glidejs StyleSheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
-        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>SHOPPIE-SITE</title>
 </head>
 
 <body>
-    <!-- Back to top button -->
+
+<!-- Back to top button -->
     <a class="gotopbtn" href="#"> <i style="color: white;" class="fas fa-arrow-up"></i> </a>
 
-    <div class="header">
-        <div class="symbol"><img class="symbol" src="./assets/logo.png"></div>
 
+  <div id="pre-loader">
+    <div class="loader"></div>
+  </div>
 
-        <h1 class="headcol">Amazon</h1>
+  <div class="adverts">
+    <span>40% off your first purchase</span>
+  </div>
 
+  <!-- Header -->
+  <header id="home" class="header">
+    <nav class="navigation">
+      <div class="nav-center container">
+        <a href="#home" class="logo">
+           <h1> <span>S</span>HOPPIE-<span>S</span>ITE</h1>
+        </a>
 
-        <div class="search">
-            <input type="text" style="width: 100%;" placeholder="Search Products" id='serstr' onkeyup="search()">
+        <div class="nav-menu">
+          <div class="nav-top">
+            <div class="logo">
+              <h1><span>S</span>HOPPIE-<span>S</span>ITE</h1>
+            </div>
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
 
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link scroll-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login/Signup</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#blog" class="nav-link scroll-link">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link scroll-link">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link scroll-link">FAQ</a>
+            </li>
+          </ul>
         </div>
-        <div class="filter">
-            <h5 style="color: white; font-family: sans-serif; padding: 3px;">Filter by price</h5>
-            <input type="text" placeholder="Min price" id="minp" />
-            <input type="text" placeholder="Max price" id="maxp" />
-            <img class="filterbutton"
-                src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-square/512/Button_15-512.png"
-                onclick="filter()">
-        </div>
-        <div class="cart">
-            <h>Cart : </h>
-            <h id="numb">0</h>
+
+        <div class="nav-icons">
+          <span><i class="fas fa-user"></i></span>
+          <span><i class="fas fa-search"></i></span>
+          <span><i class="fas fa-shopping-basket"></i></span>
         </div>
 
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="glide glide1" id="glide1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides glide__hero">
+
+            <li class="glide__slide">
+              <div class="banner">
+                <div class="banner-content">
+                  <span>New Inspiration 2020</span>
+                  <h1>CLOTHING MADE FOR YOU!</h1>
+                  <h3>Trending from men, women and kids style collection</h3>
+                  <div class="buttons-group">
+                    <button>shop women's</button>
+                    <button>shop men's</button>
+                  </div>
+                </div>
+                <img src="people's choice/images/banner_1.png" class="special_01" alt="">
+            </li>
+
+            <li class="glide__slide">
+              <div class="banner banner1">
+                <div class="banner-content">
+                  <span>New Inspiration 2020</span>
+                  <h1>CLOTHING MADE FOR YOU!</h1>
+                  <h3>Trending from men, women and kids style collection</h3>
+                  <div class="buttons-group">
+                    <button>shop women's</button>
+                    <button>shop men's</button>
+                  </div>
+                </div>
+                <img src="people's choice/images/banner_2.png" class="special_02" alt="">
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="banner">
+                <div class="banner-content">
+                  <span>New Inspiration 2020</span>
+                  <h1>CLOTHING MADE FOR YOU!</h1>
+                  <h3>Trending from men, women and kids style collection</h3>
+                  <div class="buttons-group">
+                    <button>shop women's</button>
+                    <button>shop men's</button>
+                  </div>
+                </div>
+                <img src="people's choice/images/banner_3.png" class="special_03" alt="">
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Arrows -->
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+              class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+    <section class="section category">
+      <h2 class="title">Allow your style to match your perfection!</h2>
+      <div class="category-center container">
+
+        <div class="category-box">
+          <img src="people's choice/images/cat1.jpg" alt="">
+          <div class="content">
+            <h2>Shop for Man</h2>
+            <span>155 Products</span>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <img src="people's choice/images/cat2.jpg" alt="">
+          <div class="content">
+            <h2>Shop for Woman</h2>
+            <span>155 Products</span>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <img src="people's choice/images/cat3.jpg" alt="">
+          <div class="content">
+            <h2>Shop for Kids</h2>
+            <span>155 Products</span>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Filtered Products -->
+    <section class="section sort-category">
+      <div class="title-container ">
+        <div class="section-titles">
+          <div class="section-title active filter-btn" data-id="trend">
+            <span class="dot"></span>
+            <h1 class="primary-title">Trending Products</h1>
+          </div>
+        </div>
+
+        <div class="section-titles">
+          <div class="section-title filter-btn" data-id="special">
+            <span class="dot"></span>
+            <h1 class="primary-title">Special Products</h1>
+          </div>
+        </div>
+
+        <div class="section-titles">
+          <div class="section-title filter-btn" data-id="featured">
+            <span class="dot"></span>
+            <h1 class="primary-title">Featured Products</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-center container">
+        <!-- <div class="product">
+          <div class="product-header">
+            <img src="images/pic1.png" alt="product">
+          </div>
+          <div class="product-footer">
+            <h3>Men Casual Shoe</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-price">
+              <h4>$300</h4>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="far fa-eye"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="far fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sync"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="images/pic2.png" class='small'alt="product">
+          </div>
+          <div class="product-footer">
+            <h3>Men Casual Shoe</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-price">
+              <h4>$2500.99</h4>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="far fa-eye"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="far fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sync"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="images/pic4.png" class='small' alt="product">
+          </div>
+          <div class="product-footer">
+            <h3>Men Casual Shoe</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-price">
+              <h4>$3000.99</h4>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="far fa-eye"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="far fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sync"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="images/pic3.png" class='small' alt="product">
+          </div>
+          <div class="product-footer">
+            <h3>Men Casual Shoe</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-price">
+              <h4>$3000.99</h4>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="far fa-eye"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="far fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sync"></i>
+              </a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="gallary container">
+      <figure class="gallary-item item-1">
+        <img src="people's choice/images/grid_1.jpg" alt="" class="gallary-img">
+        <div class="content">
+          <h2>Our Popular Products</h2>
+          <a href="#">View more</a>
+        </div>
+      </figure>
+
+      <figure class="gallary-item item-2">
+        <img src="people's choice/images/grid_2.jpg" alt="" class="gallary-img">
+        <div class="content">
+          <h2>Winter Collections</h2>
+        </div>
+      </figure>
+
+      <figure class="gallary-item item-3">
+        <img src="people's choice/images/grid_3.jpg" alt="" class="gallary-img">
+        <div class="content">
+          <h2>Summer Collections</h2>
+        </div>
+      </figure>
+
+      <figure class="gallary-item item-4">
+        <img src="people's choice/images/grid_4.jpg" alt="" class="gallary-img">
+        <div class="content">
+          <h2>Up to 70% OFF Spring Sale!</h2>
+        </div>
+      </figure>
+    </section>
+
+
+
+    <!-- blog -->
+    <section class="section blog" id="blog">
+      <div class="title-container">
+        <div class="section-titles">
+          <div class="section-title active">
+            <span class="dot"></span>
+            <h1 class="primary-title">Latest News</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-container container">
+        <div class="glide" id="glide3">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="blog-card">
+                  <div class="card-header">
+                    <img src="people's choice/images/grid_1.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <h3>"Fashion is the armor to survive the reality of everday life"</h3>
+                    <span>By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                      provident rem sed minus natus unde vel modi!</p>
+                    <a href="#"><button>Read More</button></a>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="blog-card">
+                  <div class="card-header">
+                    <img src="people's choice/images/grid_2.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <h3>“Fashion is a form of ugliness so intolerable that we have to alter it every six months.”</h3>
+                    <span>By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                      provident rem sed minus natus unde vel modi!</p>
+                    <a href="#"><button>Read More</button></a>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="blog-card">
+                  <div class="card-header">
+                    <img src="people's choice/images/grid_3.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <h3>“Fashion changes, but style endures.”</h3>
+                    <span>By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                      provident rem sed minus natus unde vel modi!</p>
+                    <a href="#"><button>Read More</button></a>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="blog-card">
+                  <div class="card-header">
+                    <img src="people's choice/images/grid_4.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <h3>Styling White Shirts After A Cool Day</h3>
+                    <span>By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                      provident rem sed minus natus unde vel modi!</p>
+                    <a href="#"><button>Read More</button></a>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="blog-card">
+                  <div class="card-header">
+                    <img src="people's choice/images/grid_2.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <h3>Styling White Shirts After A Cool Day</h3>
+                    <span>By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                      provident rem sed minus natus unde vel modi!</p>
+                    <a href="#"><button>Read More</button></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Facility -->
+    <section class="facility section" id="facility">
+        <div class="facility-container container">
+          <div class="facility-box">
+            <div class="facility-icon">
+              <i class="fas fa-plane"></i>
+            </div>
+            <p>FREE SHIPPING GLOBALLY</p>
+          </div>
+
+          <div class="facility-box">
+            <div class="facility-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <p>100% MONEY BACK GUARANTEE</p>
+          </div>
+
+          <div class="facility-box">
+            <div class="facility-icon">
+              <i class="far fa-credit-card"></i>
+            </div>
+            <p>MANY PAYMENT GATEWAYS</p>
+          </div>
+
+          <div class="facility-box">
+            <div class="facility-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <p>24*7 ONLINE SUPPORT</p>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- PopUp -->
+  <div class="popup">
+    <div class="popup-content">
+      <div class="popup-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="popup-left">
+        <div class="popup-img">
+          <img  src="people's choice/images/cat2.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="right-content">
+          <h1>Get Discount <span>40%</span> Off</h1>
+          <p>Sign up to our blogletter and save 40% for you next purchase. No spam, we promise!
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup-form">
+            <a href="#">Subscribe</a>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="productscolumn">
-        <div class="productlayout" id="card">
-            <div class="productcardbg">
+  </div>
 
 
-
-            </div>
-
-        </div>
-        <hr>
-        <div class="cartd">
-            <h1 style="margin-left: 600px; margin-top: 0; color: black; padding-top: 20px">
-                <u>Cart Items</u>
-            </h1>
-            <div class="productlayout" id="cartcard">
-            </div>
-
-        </div>
-
-
-        
-        <!--    FOOTER  -->
+  <!--    FOOTER  -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -116,9 +600,16 @@
                 </div>
             </div>
         </footer>
+  <!-- End Footer -->
 
 
-        <script src="index.js"></script>
+  <!-- Glidejs Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="people's choice/js/product.js"></script>
+  <script src="people's choice/js/slider.js"></script>
+  <script src="people's choice/js/index.js"></script>
 </body>
 
 </html>
