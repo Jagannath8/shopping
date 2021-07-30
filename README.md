@@ -1,5 +1,22 @@
 # Shopping site <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/209/shopping-trolley_1f6d2.png" width="50" height="50" />
 
+<div align="center">
+
+<a href="https://github.com/Jagannath8/shopping"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/Jagannath8/shopping"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/Jagannath8/shopping"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/Jagannath8/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/Jagannath8/shopping/watchers"><img src="https://img.shields.io/github/watchers/Jagannath8/shopping"></a>
+
+<a href="https://github.com/Jagannath8/shopping/graphs/contributors"><img src="https://img.shields.io/github/contributors/Jagannath8/shopping?color=brightgreen"></a>
+<a href="https://github.com/Jagannath8/shopping/stargazers"><img src="https://img.shields.io/github/stars/Jagannath8/shopping?color=0059b3"></a>
+<a href="https://github.com/Jagannath8/shopping/network/members"><img src="https://img.shields.io/github/forks/Jagannath8/shopping?color=yellow"></a>
+<a href="https://github.com/Jagannath8/shopping/issues"><img src="https://img.shields.io/github/issues/Jagannath8/shopping?color=0059b3"></a>
+<a href="https://github.com/Jagannath8/shopping/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/Jagannath8/shopping?color=yellow"></a>
+<a href="https://github.com/Jagannath8/shopping/pulls"><img src="https://img.shields.io/github/issues-pr/Jagannath8/shopping?color=brightgreen"></a>
+<a href="https://github.com/Jagannath8/shopping/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/Jagannath8/shopping?color=0059b3"></a> 
+</div>
+
 Shopping! Who doesn't love shopping? Everyone wants to get their hands on latest fashion trends and cool new gadgets.
 <p align="center"><img src="https://im.idiva.com/content/2015/Dec/shopping_10.gif" width = 50%></p>
 
