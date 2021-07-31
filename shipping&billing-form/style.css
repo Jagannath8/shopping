@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900);
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #073f3c;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.form__name {
+    color: #4ca5bb;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.form__container {
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+    border: 1px solid #DADDE8;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.personal--form {
+    color: #A4A9C5;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 55px;
+    margin-top: 10px;
+}
+
+.personal--form .last {
+    margin-left: 40px;
+}
+
+.personal--form .first,
+.personal--form .last,
+.personal--form .email {
+    display: inline-block;
+}
+
+.personal--form .first label,
+.personal--form .last label,
+.personal--form .email label {
+    margin-bottom: 10px;
+}
+
+.personal--form .first label,
+.personal--form .first input,
+.personal--form .last label,
+.personal--form .last input,
+.personal--form .email label,
+.personal--form .email input {
+    display: block;
+    min-width: 250px;
+}
+
+.personal--form .email {
+    margin-top: 20px;
+}
+
+.personal--form .email input {
+    width: 540px;
+}
+
+.shipping--form {
+    color: #A4A9C5;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 55px;
+    margin-top: 10px;
+}
+
+.shipping--form .row.two,
+.shipping--form .row.three {
+    margin-top: 20px;
+}
+
+.shipping--form .address-two,
+.shipping--form .state,
+.shipping--form .country {
+    margin-left: 40px;
+}
+
+.shipping--form .address,
+.shipping--form .address-two,
+.shipping--form .city,
+.shipping--form .state,
+.shipping--form .zip,
+.shipping--form .country {
+    display: inline-block;
+}
+
+.shipping--form .address label,
+.shipping--form .address-two label,
+.shipping--form .city label,
+.shipping--form .state label,
+.shipping--form .zip label,
+.shipping--form .country label {
+    margin-bottom: 10px;
+}
+
+.shipping--form .address label,
+.shipping--form .address input,
+.shipping--form .address-two label,
+.shipping--form .address-two input,
+.shipping--form .city label,
+.shipping--form .city input,
+.shipping--form .state label,
+.shipping--form .state input,
+.shipping--form .zip label,
+.shipping--form .zip input,
+.shipping--form .country label,
+.shipping--form .country input {
+    display: block;
+    min-width: 250px;
+}
+
+.form__question {
+    padding: 10px 55px;
+    color: #646E8A;
+}
+
+.form__question p {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.form__question input[type=checkbox] {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid #646E8A;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__question input[type=checkbox]:checked {
+    background-color: #18C2C0;
+}
+
+input {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: 1px solid #A4A9C5;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+    transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #18C2C0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #18C2C0;
+}
+
+input:focus {
+    border-color: #18C2C0;
+}
+
+input::-moz-placeholder {
+    font-weight: 500;
+    color: #646E8A;
+}
+
+input:-ms-input-placeholder {
+    font-weight: 500;
+    color: #646E8A;
+}
+
+input::placeholder {
+    font-weight: 500;
+    color: #646E8A;
+}
+
+.form__confirmation {
+    padding: 10px 55px;
+}
+
+button {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #18C2C0;
+    border: 1px solid #DADDE8;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    left: 80%;
+}
+
+button:hover {
+    background-color: #15aeac;
+}
+
+button:active {
+    background-color: #139b99;
+}
+
+.box {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    border-radius: 50px;
+    border: 2px solid #646E8A;
+    text-align: center;
+    color: #646E8A;
+}
+
+.box.billing {
+    line-height: 30px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section:nth-child(1) {
+    margin-top: 0px;
+}
+
+.sections span {
+    color: #646E8A;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
