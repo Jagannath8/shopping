@@ -4,6 +4,7 @@ let product = [
     name: "Black Jacket",
     size: "L",
     color: "Black",
+    oldPrice: "2500",
     newPrice: "2000",
     image: "product 1.jpg",
     description:
@@ -15,6 +16,7 @@ let product = [
     name: "Checked shirt",
     size: "L",
     color: "Red",
+    oldPrice: "2400",
     newPrice: "1800",
     image: "product 2.jpg",
     description:
@@ -26,6 +28,7 @@ let product = [
     name: "White shirt",
     size: "XL",
     color: "White",
+    oldPrice: "1600",
     newPrice: "1500",
     image: "product 3.jpg",
     description:
@@ -37,6 +40,7 @@ let product = [
     name: "Indian Dress",
     size: "L",
     color: "Black",
+    oldPrice: "3100",
     newPrice: "2500",
     image: "product 4.jpg",
     description:
@@ -48,6 +52,7 @@ let product = [
     name: "Skirt",
     size: "S",
     color: "Blue",
+    oldPrice: "1290",
     newPrice: "1200",
     image: "product 5.jpg",
     description:
@@ -59,6 +64,7 @@ let product = [
     name: "Frock",
     size: "L",
     color: "Pink",
+    oldPrice: "2140",
     newPrice: "2000",
     image: "product 6.jpg",
     description:
@@ -70,6 +76,7 @@ let product = [
     name: "Sherwani",
     size: "L",
     color: "Red",
+    oldPrice: "2700",
     newPrice: "2500",
     image: "product 7.jpg",
     description:
@@ -81,6 +88,7 @@ let product = [
     name: "Coat",
     size: "L",
     color: "Grey",
+    oldPrice: "2900",
     newPrice: "2200",
     image: "product 8.jpg",
     description:
@@ -92,6 +100,7 @@ let product = [
     name: "Half shirt",
     size: "L",
     color: "Blue",
+    oldPrice: "1900",
     newPrice: "1500",
     image: "product 9.jpg",
     description:
@@ -103,6 +112,7 @@ let product = [
     name: "Lehenga",
     size: "L",
     color: "Yellow",
+    oldPrice: "2750",
     newPrice: "2500",
     image: "product 10.jpg",
     description:
@@ -114,6 +124,7 @@ let product = [
     name: "Gown",
     size: "L",
     color: "Red",
+    oldPrice: "2800",
     newPrice: "2500",
     image: "product 11.jpg",
     description:
@@ -125,6 +136,7 @@ let product = [
     name: "Salwar",
     size: "L",
     color: "Green",
+    oldPrice: "2200",
     newPrice: "2000",
     image: "product 12.jpg",
     description:
@@ -143,14 +155,14 @@ function displayproduct(products, type = "main", place = "card") {
       strproduct = `	<div class="product-card">
       <div class="badge">Hot</div>
       <div class="product-tumb">
-        <img src="products/${ele.image}" alt="">
+        <img class="image" src="products/${ele.image}" alt="">
       </div>
       <div class="product-details">
         <span class="product-catagory">SIZE: ${ele.size}</span>
         <h4><a href="">${ele.name}</a></h4>
         <p>${ele.description}</p>
         <div class="product-bottom-details">
-          <div class="product-price"><small>₹1096.00</small>₹${ele.newPrice}</div>
+          <div class="product-price"><small>₹${ele.oldPrice}</small>₹${ele.newPrice}</div>
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <button class="shopping-cart-button" onclick="addToCart(${ele.id})"><i class="fa fa-shopping-cart"></i></button>
@@ -172,7 +184,7 @@ function displayproduct(products, type = "main", place = "card") {
         <h4><a href="">${ele.name}</a></h4>
         <p>${ele.description}</p>
         <div class="product-bottom-details">
-          <div class="product-price"><small>₹1096.00</small>₹${ele.newPrice}</div>
+          <div class="product-price"><small>₹${ele.oldPrice}</small>₹${ele.newPrice}</div>
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <button class="shopping-cart-button" onclick="addToCart(${ele.id})"><i class="fa fa-shopping-cart"></i></button>
