@@ -147,7 +147,6 @@ let product = [
 let cart = [];
 let count = 0;
 function displayproduct(products, type = "main", place = "card") {
-  console.log(products);
   let strproduct = "";
   let arrproduct = "";
   products.forEach(function (ele, index) {
@@ -186,7 +185,7 @@ function displayproduct(products, type = "main", place = "card") {
         <div class="product-bottom-details">
           <div class="product-price"><small>₹${ele.oldPrice}</small>₹${ele.newPrice}</div>
           <div class="product-links">
-            <a href=""><i class="fa fa-heart"></i></a>
+            <a href="javascript:deleteproduct(${ele.id})"><i class="fa fa-trash"></i></a>
             <button class="shopping-cart-button" onclick="addToCart(${ele.id})"><i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
