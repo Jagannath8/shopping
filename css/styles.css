@@ -41,6 +41,12 @@ img:hover {
   margin-left: 5%;
 }
 
+.facility-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
 .search {
   width: 30%;
   margin-left: 5%;
@@ -384,10 +390,10 @@ ul {
 
 .fas {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .fas:hover {
-  color: white;
+  color: black;
 }
 
 /* ------------------------------- */
