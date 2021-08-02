@@ -1103,7 +1103,7 @@ span.dot::before {
   padding: 6rem 0;
 }
 
-.facility-contianer {
+.facility-container {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
@@ -1163,14 +1163,14 @@ Facility Media Query
 ======================
 */
 @media only screen and (max-width: 998px) {
-  .facility-contianer {
+  .facility-container {
     grid-template-columns: 1fr 1fr;
     row-gap: 3rem;
   }
 }
 
 @media only screen and (max-width: 568px) {
-  .facility-contianer {
+  .facility-container {
     grid-template-columns: 1fr;
   }
 
@@ -1180,7 +1180,7 @@ Facility Media Query
     line-height: 8.5rem;
   }
 
-  .facility-contianer p {
+  .facility-container p {
     font-size: 1.4rem;
   }
 }
