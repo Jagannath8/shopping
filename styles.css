@@ -74,7 +74,8 @@ img {
 .loader {
   height: 100vh;
   width: 100vw;
-  background: url("people's choice/images/loader.svg") center/30rem no-repeat fixed;
+  background: url("people's choice/images/loader.svg") center/30rem no-repeat
+    fixed;
 }
 
 #pre-loader.hide {
@@ -198,6 +199,10 @@ img {
 
 .hamburger {
   display: none;
+}
+
+.card-header {
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 996px) {
