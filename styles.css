@@ -205,6 +205,13 @@ img {
   overflow: hidden;
 }
 
+.card-header img {
+  width: 390px;
+  height: 390px;
+  object-fit: cover;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 996px) {
   .nav-item:not(:last-child) {
     margin-right: 0.3rem;
@@ -1028,6 +1035,7 @@ span.dot::before {
   background-color: var(--grey-alt);
   width: 95%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .blog-card:not(:last-child) {
@@ -1036,6 +1044,7 @@ span.dot::before {
 
 .card-footer {
   padding: 1rem;
+  height: 300px;
 }
 
 .card-footer h3 {
@@ -1067,6 +1076,8 @@ span.dot::before {
   color: var(--black);
   cursor: pointer;
   transition: 0.3s;
+  position: absolute;
+  bottom: 20px;
 }
 
 .card-footer a button:focus {
