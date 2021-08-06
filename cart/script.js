@@ -48,6 +48,9 @@ function showProduct(id,quant){
 	curCartItem += 1
 }
 window.onload = event =>{
+	if(getCookie("items") == ""){
+    document.cookie = 'items="{}";'
+    }
 	if(getCookie("items") == "{}"){
 		let main_cart_panel = document.getElementById("cart-items")
 		let h1 = document.createElement("h1")

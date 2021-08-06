@@ -621,6 +621,12 @@
   <script src="people's choice/js/product.js"></script>
   <script src="people's choice/js/slider.js"></script>
   <script src="people's choice/js/index.js"></script>
+  <!-- REQUIRED FOR CART TO WORK! -->
+  <script type="text/javascript">
+    if(getCookie("items") == ""){
+    document.cookie = 'items="{}";'
+    }
+  </script>
 </body>
 
 </html>

@@ -147,7 +147,6 @@ var curObj = {}
 
 let cart = [];
 let count = 0;
-
 function displayproduct(products, type = "main", place = "card") {
   let strproduct = "";
   let arrproduct = "";
@@ -283,6 +282,11 @@ function getProductObjById(id){
 }
 displayproduct(product);
 window.onload = (event) => {
+  if(getCookie("items") == ""){
+    document.cookie = 'items="{}";'
+    }
   items = JSON.parse(getCookie("items"))
   curObj = items
+  count = Object.values(curObj).reduce((a, b) => a + b, 0)
+  document.getElementById("numb").innerHTML = Object.values(curObj).reduce((a, b) => a + b, 0)
 }
