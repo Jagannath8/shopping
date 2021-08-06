@@ -146,6 +146,7 @@ let product = [
 
 let cart = [];
 let count = 0;
+
 function displayproduct(products, type = "main", place = "card") {
   let strproduct = "";
   let arrproduct = "";
@@ -264,5 +265,12 @@ function search() {
   });
   displayproduct(items);
 }
-
+function getProductObjById(id){
+  for (const item of product){
+    if(item.id == id){
+      return item
+    }
+  }
+  return {}
+}
 displayproduct(product);
