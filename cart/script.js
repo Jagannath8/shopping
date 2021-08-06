@@ -1,9 +1,32 @@
 console.log(getProductObjById(1))
+//Cookie Items
+/* items=
+{
+	1: {"quant": 1},
+	8: {"quant": 2}
+}
+*/
 let curAmt = []
 let curCartItem = 0
-function modifyPrices(price,quant,itemno){
+var curObj = {}
+function modifyPrices(id,price,quant,itemno,parent){
 	const no = itemno.slice(-1)
-	console.log(price,quant,no)
+	//console.log(price,quant,no)
+	parent.querySelector(".cart-price-multiplier").innerHTML = parseInt(quant)
+	parent.querySelector(".cart-price-product").innerHTML = parseInt((quant * price)).toFixed(2)
+	curAmt[no] = parseInt((quant * price))
+	curObj[id] = quant
+	document.cookie = `items=${JSON.stringify(curObj)}`
+	//console.log(curAmt)
+	document.querySelector(".totalamount").innerHTML = parseInt(curAmt.reduce((a, b) => a + b, 0)).toFixed(2)
+}
+function deleteItem(id,parent,totalPrice){
+	//console.log(price,quant,no)
+	parent.remove()
+	delete curObj[id]
+	document.cookie = `items=${JSON.stringify(curObj)}`
+	//console.log(curAmt)
+	window.location.reload()
 }
 function showProduct(id,quant){
 	const main_cart_panel = document.getElementById("cart-items")
@@ -16,7 +39,8 @@ function showProduct(id,quant){
 	node.querySelector(".cartmaintext").innerHTML = productDetails.description
 	node.querySelector("input[type=number]").value = quant
 	node.querySelector("input[type=number]").id = `cartSel${curCartItem}`
-	node.querySelector("input[type=number]").oninput = function(){modifyPrices(productDetails.newPrice,this.value,this.id)}
+	node.querySelector("input[type=number]").oninput = function(){modifyPrices(id,productDetails.newPrice,this.value,this.id,node)}
+	node.querySelector("a").onclick = function(){deleteItem(id,node,node.querySelector(".cart-price-product").innerHTML)} 
 	node.querySelector(".cart-item-img").src = `products/${productDetails.image}`
 	node.id = " "
 	main_cart_panel.appendChild(node)
@@ -24,8 +48,20 @@ function showProduct(id,quant){
 	curCartItem += 1
 }
 window.onload = event =>{
-	showProduct(1,3)
-	showProduct(8,3)
-	showProduct(3,1)
+	if(getCookie("items") == "{}"){
+		let main_cart_panel = document.getElementById("cart-items")
+		let h1 = document.createElement("h1")
+		h1.innerHTML = "Your cart is empty! <br> <a href='product.html'>Go get something</a>"
+		main_cart_panel.appendChild(h1)
+	}
+	items = JSON.parse(getCookie("items"))
+	curObj = items
+	console.log(items)
+	for (const entrie of Object.entries(items)){
+		id = entrie[0]
+		quant = entrie[1]
+		console.log(id,quant)
+		showProduct(id,parseInt(quant))
+	}
 	document.querySelector(".totalamount").innerHTML = parseInt(curAmt.reduce((a, b) => a + b, 0)).toFixed(2)
 }

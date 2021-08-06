@@ -143,6 +143,7 @@ let product = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
   },
 ];
+var curObj = {}
 
 let cart = [];
 let count = 0;
@@ -199,7 +200,14 @@ function displayproduct(products, type = "main", place = "card") {
 
   document.getElementById(place).innerHTML = arrproduct;
 }
-
+function modifyCart(id){
+  if(Object.keys(curObj).includes(id) || Object.keys(curObj).includes(id.toString())){
+    curObj[id] += 1
+  } else {
+    curObj[id] = 1
+  }
+  document.cookie = `items=${JSON.stringify(curObj)}`
+}
 function getProductByID(prod, id) {
   return prod.find(function (ele) {
     return ele.id == id;
@@ -210,7 +218,7 @@ let flag = false;
 function addToCart(id) {
   flag = false;
   let item = getProductByID(product, id);
-
+  modifyCart(id)
   cart.forEach(function (element) {
     if (element.id == item.id) {
       flag = true;
@@ -274,3 +282,7 @@ function getProductObjById(id){
   return {}
 }
 displayproduct(product);
+window.onload = (event) => {
+  items = JSON.parse(getCookie("items"))
+  curObj = items
+}
