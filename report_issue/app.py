@@ -4,8 +4,8 @@ import smtplib
 import os
 app = Flask(__name__)
 
-os.environ['API_USER'] = '' #insert gmail full email here (generate temp gmail account with password)
-os.environ['API_PASSWORD'] = '' # insert gmail email password here 
+os.environ['API_USER'] = 'vhsiao36@gmail.com' #insert gmail full email here (generate temp gmail account with password)
+os.environ['API_PASSWORD'] = 'nbtgomolzcszkbyf' # insert gmail email password here
 
 API_USER = os.environ.get('API_USER')
 API_PASSWORD = os.getenv('API_PASSWORD')
