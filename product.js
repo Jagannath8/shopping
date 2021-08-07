@@ -224,10 +224,6 @@ function addToCart(id) {
     }
   });
 
-  if (flag) {
-    alert("This product is already in cart.");
-    return 0;
-  }
   cart.push(item);
   count += 1;
   document.getElementById("numb").innerText = count;
@@ -282,11 +278,20 @@ function getProductObjById(id){
 }
 displayproduct(product);
 window.onload = (event) => {
-  if(getCookie("items") == ""){
-    document.cookie = 'items="{}";'
+  if(getCookie("items") == undefined){
+    document.cookie = 'items={}'
     }
+
   items = JSON.parse(getCookie("items"))
   curObj = items
-  count = Object.values(curObj).reduce((a, b) => a + b, 0)
-  document.getElementById("numb").innerHTML = Object.values(curObj).reduce((a, b) => a + b, 0)
+  count = Object.values(curObj)
+  
+  console.log(count)
+  count = count.map(x=>+x).reduce((a, b) => a + b, 0)
+  if(items=="{}"){
+    document.getElementById("numb").innerHTML = "0"
+    curObj = {}
+  } else {
+    document.getElementById("numb").innerHTML = count.map(x=>+x).reduce((a, b) => a + b, 0)
+  }
 }

@@ -51,15 +51,23 @@ window.onload = event =>{
 	if(getCookie("items") == ""){
     document.cookie = 'items="{}";'
     }
-	if(getCookie("items") == "{}"){
+	if(getCookie("items") == "{}" || getCookie("items") == undefined){
 		let main_cart_panel = document.getElementById("cart-items")
 		let h1 = document.createElement("h1")
 		h1.innerHTML = "Your cart is empty! <br> <a href='product.html'>Go get something</a>"
 		main_cart_panel.appendChild(h1)
 	}
+	console.log(typeof getCookie("items"))
 	items = JSON.parse(getCookie("items"))
+	console.log(typeof items + " " + items)
+	if(items == "{}"){
+		let main_cart_panel = document.getElementById("cart-items")
+		let h1 = document.createElement("h1")
+		h1.innerHTML = "Your cart is empty! <br> <a href='product.html'>Go get something</a>"
+		main_cart_panel.appendChild(h1)
+	} else {
 	curObj = items
-	console.log(items)
+	console.log(items,Object.entries(items))
 	for (const entrie of Object.entries(items)){
 		id = entrie[0]
 		quant = entrie[1]
@@ -67,4 +75,4 @@ window.onload = event =>{
 		showProduct(id,parseInt(quant))
 	}
 	document.querySelector(".totalamount").innerHTML = parseInt(curAmt.reduce((a, b) => a + b, 0)).toFixed(2)
-}
+}}
