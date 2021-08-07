@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="icon" href="./assets/logo.png">
+        <title>Need to Report an Issue?</title>
+        <link rel="stylesheet" type="text/css" href="report_issue_style.css"/>
+        <script language="JavaScript">
+            var frmvalidator  = new Validator("reportform");
+            frmvalidator.addValidation("report_issues","req","Please provide issue in textbox");
+        </script>
+    </head>
+
+    <body>
+        <h1>Need to Report an Issue with SHOPPIE-SITE?</h2>
+        <label for="message">Describe to us what issues you are having
+            with the site. Any feedback is appreciated.
+        </label>
+        <form method="post" enctype="multipart/form-data" action="http://127.0.0.1:5000/success">
+            
+            <textarea id="message" name="message" rows="7" cols="65" value=""></textarea>
+            <label for="subject">Subject of Feedback</label>
+            <input type="text" name="subject" id="subject">
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
