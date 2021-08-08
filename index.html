@@ -92,7 +92,7 @@
         <div class="nav-icons">
           <span><i class="fas fa-user"></i></span>
           <span><i class="fas fa-search"></i></span>
-          <span><i class="fas fa-shopping-basket"></i></span>
+          <span id="shopping-cart"><i class="fas fa-shopping-basket"></i></span>
         </div>
 
         <div class="hamburger">
@@ -623,6 +623,12 @@
   <script src="people's choice/js/product.js"></script>
   <script src="people's choice/js/slider.js"></script>
   <script src="people's choice/js/index.js"></script>
+  <!-- REQUIRED FOR CART TO WORK! -->
+  <script type="text/javascript">
+    if(getCookie("items") == ""){
+    document.cookie = 'items="{}";'
+    }
+  </script>
 </body>
 
 </html>
