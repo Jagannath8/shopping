@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/logo.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <!-- Glidejs StyleSheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Script -->
+  <script src="cart/cookie.js"></script>
+  <script src="product.js"></script>
+  <script src="cart/script.js"></script>
+  <title>SHOPPIE-SITE</title>
+</head>
+
+<body>
+
+<!-- Back to top button -->
+    <a class="gotopbtn" href="#"> <i style="color: white;" class="fas fa-arrow-up"></i> </a>
+
+
+  <div id="pre-loader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="adverts">
+    <span>40% off your first purchase</span>
+  </div>
+
+  <!-- Header -->
+  <header id="home" class="header">
+    <nav class="navigation">
+      <div class="nav-center container">
+        <a href="#home" class="logo">
+           <h1> <span>S</span>HOPPIE-<span>S</span>ITE</h1>
+        </a>
+
+        <div class="nav-menu">
+          <div class="nav-top">
+            <div class="logo">
+              <h1><span>S</span>HOPPIE-<span>S</span>ITE</h1>
+            </div>
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link scroll-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login or signup/index.html" class="nav-link">Login/Signup</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#blog" class="nav-link scroll-link">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="socialmedia-connect/index.html" class="nav-link">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="faq-new/index.html" class="nav-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-icons">
+          <span><i class="fas fa-user"></i></span>
+          <span><i class="fas fa-search"></i></span>
+          <span id="shopping-cart"><i class="fas fa-shopping-basket"></i></span>
+        </div>
+
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  	<h1>Your Cart</h1>
+    <div class="cart-body">
+    	<div id="cart-items">
+    		<div class="cart-item template" id="cart-item-template">
+    			<h1 class="cart-item-title"></h1>
+    			<img class="cart-item-img" src="https://img.cuisineaz.com/660x660/2014/08/07/i31454-photo-de-creme-brulee.jpeg" alt="creme brulee">
+    			<div class="cart-item-quant">
+    				<label for="cart-item-quant">Quantity:</label>
+  	  			<input type="number" step="1" id="cart-item-quant" min="1" value="1"> 
+  	  		</div>
+  	  		<h3 class="cart-item-price">₹<span class="cart-price-orig"></span> X <span class="cart-price-multiplier">1</span> = ₹<span class="cart-price-product"></span></h3>
+  	  		<p><span class="cartmaintext"></span><br><span class="stock">In Stock.</span></p><br><a href="#">Delete from cart</a>
+    		</div>
+     </div>
+      <div class="cart-total">
+        <h2>Total Amout Due: ₹<span class="totalamount">0.00</span></h2>
+        <a href="payment-page/index.html">
+        <button id="checkout">Proceed to checkout &rarr;</button>
+      </div>
+  </main>
+
+
+  <!--    FOOTER  -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="privacy_policy.html">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/jagannath.08"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/Jaganna38568564"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/_jagannath_08/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jagannath-pal-a26403178/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  <!-- End Footer -->
+
+
+  <!-- Glidejs Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="people's choice/js/product.js"></script>
+  <script src="people's choice/js/slider.js"></script>
+  <script src="people's choice/js/index.js"></script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", () => {
   nav.classList.remove("show");
   document.body.classList.remove("show");
 });
-
+document.getElementById("shopping-cart").addEventListener("click",function(){window.location = "cart.html"})
 // Fixed Nav
 const navBar = document.querySelector(".navigation");
 const navHeight = navBar.getBoundingClientRect().height;
